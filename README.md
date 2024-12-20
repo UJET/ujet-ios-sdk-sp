@@ -1,2 +1,2 @@
-# Swift Pacakge for iOS SDK
+# Swift Package for iOS SDK
 
