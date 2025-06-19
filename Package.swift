@@ -19,7 +19,7 @@ let package = Package(
     .binaryTarget(
       name: "CCAIKit",
       url: "https://sdk.ujet.co/ccaip/ios-staging/3.0.0/CCAIKit.xcframework.zip",
-      checksum: "2af32466327e9817af9e510231231dad3e6ca8dfa852681de4eb75d739a798e1"
+      checksum: "95fa169c32dbcad826411e8a97041e23b190f197ac1902b3d4dbc094c738346c"
     ),
 
     .binaryTarget(
