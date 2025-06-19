@@ -54,6 +54,7 @@ let package = Package(
       dependencies: [
         "CCAIKit",
         "CCAIChat",
+        "CCAIChatRed",
         .product(name: "TwilioConversationsClient", package: "conversations-ios")
       ]
     )
