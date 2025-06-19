@@ -18,20 +18,20 @@ let package = Package(
   targets: [
     .binaryTarget(
       name: "CCAIKit",
-      url: "https://sdk.ujet.co/ccaip/ios-staging/3.0.0-rc1/CCAIKit.xcframework.zip",
-      checksum: "322bc792571e62e28ff452b0ebc19b4afd898e8c2d1fe3339ddc6518a49dd197"
+      url: "https://sdk.ujet.co/ccaip/ios-staging/3.0.0-rc.2/CCAIKit.xcframework.zip",
+      checksum: "b6f4209395b4f0181b3a32f0c6022c2c2aa74a32fd93cd750d5a2ac88eacfdae"
     ),
 
     .binaryTarget(
       name: "CCAIChat",
-      url: "https://sdk.ujet.co/ccaip/ios-staging/3.0.0-rc1/CCAIChat.xcframework.zip",
-      checksum: "ad3057f87390bfdeefe3de99b772f7420234f31eb2d6c48dbe0284266891a18e"
+      url: "https://sdk.ujet.co/ccaip/ios-staging/3.0.0-rc.2/CCAIChat.xcframework.zip",
+      checksum: "181829448eaa5154420a6a1f94247961c2694022806e91fecd5c6d11ae243b7d"
     ),
 
     .binaryTarget(
       name: "CCAIChatRed",
-      url: "https://sdk.ujet.co/ccaip/ios-staging/3.0.0-rc1/CCAIChatRed.xcframework.zip",
-      checksum: "240f73c7993e6666c5b26dd0456cc8ffdf15c7f311a3ebfcd8d7ddab24760807"
+      url: "https://sdk.ujet.co/ccaip/ios-staging/3.0.0-rc.2/CCAIChatRed.xcframework.zip",
+      checksum: "d05044ca7e7379ca274874973357b9869c913da44d5e8a1974c5761160bc363a"
     ),
 
     .target(
