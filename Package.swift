@@ -18,7 +18,7 @@ let package = Package(
   targets: [
     .binaryTarget(
       name: "CCAIKit",
-      url: "https://sdk.ujet.co/ccaip/ios-staging/3.1.0-rc.02/CCAIKit.xcframework.zip"
+      url: "https://sdk.ujet.co/ccaip/ios-staging/3.1.0-rc.02/CCAIKit.xcframework.zip",
       checksum: "4dbe1fdc4a7ae2efa9b91d07d2e5632c85494af98cd9ba7e4bf877e99a43c594"
     ),
 
@@ -30,7 +30,7 @@ let package = Package(
 
     .binaryTarget(
       name: "CCAIChatRed",
-      url: "https://sdk.ujet.co/ccaip/ios-staging/3.1.0-rc.02/CCAIChatRed.xcframework.zip"
+      url: "https://sdk.ujet.co/ccaip/ios-staging/3.1.0-rc.02/CCAIChatRed.xcframework.zip",
       checksum: "276318426b63c276014b57b064ff5962ec10f5c088aa8b97ec9a354c7db77a91"
     ),
 
