@@ -1,6 +1,15 @@
 {
   "pins" : [
     {
+      "identity" : "cobrowse-sdk-ios-binary",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/cobrowseio/cobrowse-sdk-ios-binary",
+      "state" : {
+        "revision" : "c8390d5ea9ad38861caaee317b606cdad498fff3",
+        "version" : "3.9.0"
+      }
+    },
+    {
       "identity" : "conversations-ios",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/twilio/conversations-ios",

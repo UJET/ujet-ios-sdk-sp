@@ -10,10 +10,14 @@ let package = Package(
   products: [
     .library(
       name: "CCAIKit",
-      targets: ["WrapperCCAIKit", "WrapperCCAIChat", "WrapperCCAIChatRed"])
+      targets: ["WrapperCCAIKit", "WrapperCCAIChat", "WrapperCCAIChatRed"]),
+    .library(
+      name: "CCAIScreenShare",
+      targets: ["WrapperCCAIScreenShare"])
   ],
   dependencies: [
-    .package(url: "https://github.com/twilio/conversations-ios", .upToNextMinor(from: "4.0.4"))
+    .package(url: "https://github.com/twilio/conversations-ios", .upToNextMinor(from: "4.0.4")),
+    .package(url: "https://github.com/cobrowseio/cobrowse-sdk-ios-binary", .upToNextMinor(from: "3.9.0"))
   ],
   targets: [
     .binaryTarget(
@@ -32,6 +36,12 @@ let package = Package(
       name: "CCAIChatRed",
       url: "https://sdk.ujet.co/ccaip/ios-staging/3.1.0-rc.02/CCAIChatRed.xcframework.zip",
       checksum: "276318426b63c276014b57b064ff5962ec10f5c088aa8b97ec9a354c7db77a91"
+    ),
+
+    .binaryTarget(
+      name: "CCAIScreenShare",
+      url: "https://sdk.ujet.co/ccaip/ios-staging/3.1.0-rc.02/CCAIScreenShare.xcframework.zip",
+      checksum: "db2990601f7eccc65bfab943c37aef24643741cbb26e82bbf2458d5dc171d88f"
     ),
 
     .target(
@@ -56,6 +66,15 @@ let package = Package(
         "CCAIChat",
         "CCAIChatRed",
         .product(name: "TwilioConversationsClient", package: "conversations-ios")
+      ]
+    ),
+
+    .target(
+      name: "WrapperCCAIScreenShare",
+      dependencies: [
+        "CCAIKit",
+        "CCAIScreenShare",
+        .product(name: "CobrowseSDK", package: "cobrowse-sdk-ios-binary")
       ]
     )
   ]
