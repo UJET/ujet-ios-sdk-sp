@@ -22,22 +22,26 @@ let package = Package(
   targets: [
     .binaryTarget(
       name: "CCAIKit",
-      path: "CCAIKit.xcframework"
+      url: "https://sdk.ujet.co/ccaip/ios/3.1.0/CCAIKit.xcframework.zip",
+      checksum: "c23d8a730d2cce56d980d389509173d686798c6be5289ede490d056cb003aa10"
     ),
 
     .binaryTarget(
       name: "CCAIChat",
-      path: "CCAIChat.xcframework"
+      url: "https://sdk.ujet.co/ccaip/ios/3.1.0/CCAIChat.xcframework.zip",
+      checksum: "f9fbc5807ee5a8bb67b6f787df404e452aa77e477ce93da4e5bf2a0ee834e00a"
     ),
 
     .binaryTarget(
       name: "CCAIChatRed",
-      path: "CCAIChatRed.xcframework"
+      url: "https://sdk.ujet.co/ccaip/ios/3.1.0/CCAIChatRed.xcframework.zip",
+      checksum: "4017f6f80b28950a8d994551f71fea78fc2aa0abdabf4fe6af18066bcd0b06c5"
     ),
 
     .binaryTarget(
       name: "CCAIScreenShare",
-      path: "CCAIScreenShare.xcframework"
+      url: "https://sdk.ujet.co/ccaip/ios/3.1.0/CCAIScreenShare.xcframework.zip",
+      checksum: "0aeee63f7648d5b991398f631f04fd198a66ffa1e37dc12cb1a5683168a0d752"
     ),
 
     .target(
