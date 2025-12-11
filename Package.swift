@@ -17,31 +17,31 @@ let package = Package(
   ],
   dependencies: [
     .package(url: "https://github.com/twilio/conversations-ios", .upToNextMinor(from: "4.0.4")),
-    .package(url: "https://github.com/cobrowseio/cobrowse-sdk-ios-binary", .upToNextMinor(from: "3.9.0"))
+    .package(url: "https://github.com/cobrowseio/cobrowse-sdk-ios-binary", .upToNextMinor(from: "3.13.4"))
   ],
   targets: [
     .binaryTarget(
       name: "CCAIKit",
-      url: "https://sdk.ujet.co/ccaip/ios-staging/3.2.0-rc.2/CCAIKit.xcframework.zip",
-      checksum: "93d9915080b5fb0fbdb6bbbc8b128952bec4c29942892dd07c886435c872e079"
+      url: "https://sdk.ujet.co/ccaip/ios-staging/3.2.1/CCAIKit.xcframework.zip",
+      checksum: "c19da11f000e89ae57e86e1ecf3a1a9ea457b95b708f259c71e1f5aa124d4287"
     ),
 
     .binaryTarget(
       name: "CCAIChat",
-      url: "https://sdk.ujet.co/ccaip/ios-staging/3.2.0-rc.2/CCAIChat.xcframework.zip",
-      checksum: "fbbe4dcb8fedf1b648058b9aa5269cfa49aa582cde0054e699442fc202de3376"
+      url: "https://sdk.ujet.co/ccaip/ios-staging/3.2.1/CCAIChat.xcframework.zip",
+      checksum: "20fff79ff8fb4ab90ede852c9b756fdbf89370ac904cb287d3c0828a7bbd4a58"
     ),
 
     .binaryTarget(
       name: "CCAIChatRed",
-      url: "https://sdk.ujet.co/ccaip/ios-staging/3.2.0-rc.2/CCAIChatRed.xcframework.zip",
-      checksum: "8db2396d8c79084f04e6c949af358305246daa47fdd8cf937465af7841068768"
+      url: "https://sdk.ujet.co/ccaip/ios-staging/3.2.1/CCAIChatRed.xcframework.zip",
+      checksum: "3d8b6e5e03fc033d9e33ebe2337e5315a49e1b4605cabafce8b006057ab6682d"
     ),
 
     .binaryTarget(
       name: "CCAIScreenShare",
-      url: "https://sdk.ujet.co/ccaip/ios-staging/3.2.0-rc.2/CCAIScreenShare.xcframework.zip",
-      checksum: "4d01f94578aa27e172593fa26237cf9b970cafa76de33015b2203e045e5b6e17"
+      url: "https://sdk.ujet.co/ccaip/ios-staging/3.2.1/CCAIScreenShare.xcframework.zip",
+      checksum: "34e548eb23f92c37d5d045619446c96c29bb0d910f6434bbfa4a02ffa4414b7c"
     ),
 
     .target(
