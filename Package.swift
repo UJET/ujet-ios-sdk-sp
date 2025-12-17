@@ -1,97 +1,80 @@
-// swift-tools-version:5.5
+// swift-tools-version:5.7
 
 import PackageDescription
 
 let package = Package(
-  name: "UJET",
+  name: "CCAIKit",
   platforms: [
-    .iOS(.v13)
+    .iOS(.v16)
   ],
   products: [
     .library(
-      name: "UJETKit",
-      targets: ["WrapperUJET", "WrapperUJETChatRed", "WrapperUJETCallRed"]),
+      name: "CCAIKit",
+      targets: ["WrapperCCAIKit", "WrapperCCAIChat", "WrapperCCAIChatRed"]),
     .library(
-      name: "UJETCobrowseKit",
-      targets: ["WrapperUJETCobrowse"]),
-    .library(
-      name: "UJETCobrowseExtensionKit",
-      targets: ["WrapperUJETCobrowseExtension"]),
+      name: "CCAIScreenShare",
+      targets: ["WrapperCCAIScreenShare"]),
   ],
   dependencies: [
-    .package(url: "https://github.com/twilio/conversations-ios", .upToNextMinor(from: "4.0.2")),
-    .package(url: "https://github.com/twilio/twilio-voice-ios", .exact("6.10.4")),
-    .package(url: "https://github.com/cobrowseio/cobrowse-sdk-ios-binary", .exact("2.29.6")),
+    .package(url: "https://github.com/twilio/conversations-ios", .upToNextMinor(from: "4.0.4")),
+    .package(url: "https://github.com/cobrowseio/cobrowse-sdk-ios-binary", .upToNextMinor(from: "3.13.4")),
   ],
   targets: [
     .binaryTarget(
-      name: "UJETFoundationKit",
-      url: "https://sdk.ujet.co/ios/2.15.0/UJETFoundationKit.xcframework.zip",
-      checksum: "f103540850bb8acb2c06d62c9da7327f4da447d97f18149b09cc8ad6259e895d"
+      name: "CCAIKit",
+      url: "https://sdk.ujet.co/ccaip/ios/3.2.1/CCAIKit.xcframework.zip",
+      checksum: "c19da11f000e89ae57e86e1ecf3a1a9ea457b95b708f259c71e1f5aa124d4287"
     ),
 
     .binaryTarget(
-      name: "UJETKit",
-      url: "https://sdk.ujet.co/ios/2.15.0/UJETKit.xcframework.zip",
-      checksum: "62df411c1106c5536ad39d354a87022994b559160def25b45d8214f5b93517c9"
+      name: "CCAIChat",
+      url: "https://sdk.ujet.co/ccaip/ios/3.2.1/CCAIChat.xcframework.zip",
+      checksum: "20fff79ff8fb4ab90ede852c9b756fdbf89370ac904cb287d3c0828a7bbd4a58"
     ),
 
     .binaryTarget(
-      name: "UJETCobrowseKit",
-      url: "https://sdk.ujet.co/ios/2.15.0/UJETCobrowseKit.xcframework.zip",
-      checksum: "e89df588f287d56fe7e235e49df7cb2cb6927e267cc6b76936b48b14ead13fcb"
+      name: "CCAIChatRed",
+      url: "https://sdk.ujet.co/ccaip/ios/3.2.1/CCAIChatRed.xcframework.zip",
+      checksum: "3d8b6e5e03fc033d9e33ebe2337e5315a49e1b4605cabafce8b006057ab6682d"
     ),
 
     .binaryTarget(
-      name: "UJETChatRedKit",
-      url: "https://sdk.ujet.co/ios/2.15.0/UJETChatRedKit.xcframework.zip",
-      checksum: "114122bbaf40adc97e478ec1171eb5d47651d764cb6aa4ee51cc1f707d61337d"
-    ),
-    .binaryTarget(
-      name: "UJETCallRedKit",
-      url: "https://sdk.ujet.co/ios/2.15.0/UJETCallRedKit.xcframework.zip",
-      checksum: "dbef7974545d96e716fd29dd34715502fd072a552c74ab6bbd64010fc728355a"
+      name: "CCAIScreenShare",
+      url: "https://sdk.ujet.co/ccaip/ios/3.2.1/CCAIScreenShare.xcframework.zip",
+      checksum: "34e548eb23f92c37d5d045619446c96c29bb0d910f6434bbfa4a02ffa4414b7c"
     ),
 
     .target(
-      name: "WrapperUJET",
+      name: "WrapperCCAIKit",
       dependencies: [
-        "UJETKit",
-        "UJETFoundationKit",
-        .product(name: "TwilioVoice", package: "twilio-voice-ios")
+        "CCAIKit"
       ]
     ),
 
     .target(
-      name: "WrapperUJETCobrowse",
+      name: "WrapperCCAIChat",
       dependencies: [
-        "UJETFoundationKit",
-        "UJETCobrowseKit",
-        .product(name: "CobrowseIO", package: "cobrowse-sdk-ios-binary")
+        "CCAIKit",
+        "CCAIChat"
       ]
     ),
 
     .target(
-      name: "WrapperUJETCobrowseExtension",
+      name: "WrapperCCAIChatRed",
       dependencies: [
-        .product(name: "CobrowseIOAppExtension", package: "cobrowse-sdk-ios-binary")
+        "CCAIKit",
+        "CCAIChat",
+        "CCAIChatRed",
+        .product(name: "TwilioConversationsClient", package: "conversations-ios")
       ]
     ),
 
     .target(
-      name: "WrapperUJETChatRed",
+      name: "WrapperCCAIScreenShare",
       dependencies: [
-        "UJETFoundationKit",
-        "UJETChatRedKit",
-        .product(name: "TwilioConversationsClient", package: "conversations-ios"),
-      ]
-    ),
-    .target(
-      name: "WrapperUJETCallRed",
-      dependencies: [
-        "UJETFoundationKit",
-        "UJETCallRedKit",
-        .product(name: "TwilioVoice", package: "twilio-voice-ios")
+        "CCAIKit",
+        "CCAIScreenShare",
+        .product(name: "CobrowseSDK", package: "cobrowse-sdk-ios-binary")
       ]
     )
   ]
