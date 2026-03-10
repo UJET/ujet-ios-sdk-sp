@@ -19,7 +19,7 @@ let package = Package(
       targets: ["WrapperUJETCobrowseExtension"]),
   ],
   dependencies: [
-    .package(url: "https://github.com/twilio/conversations-ios", .upToNextMinor(from: "4.0.2")),
+    .package(url: "https://github.com/twilio/conversations-ios", .exact("4.0.2")),
     .package(url: "https://github.com/twilio/twilio-voice-ios", .exact("6.10.4")),
     .package(url: "https://github.com/cobrowseio/cobrowse-sdk-ios-binary", .exact("2.29.6")),
   ],
@@ -27,30 +27,30 @@ let package = Package(
     .binaryTarget(
       name: "UJETFoundationKit",
       url: "https://sdk.ujet.co/ios/2.15.1/UJETFoundationKit.xcframework.zip",
-      checksum: "fe63e6c12cbe525a6e5fd5034f943e1068e04cc799f4e2dd1e5beaa1079c1675"
+      checksum: "cd1aaf4ec0642f1ef027f3ea381f51ee7f11b5dbea6a72909a2f313dd65df13f"
     ),
 
     .binaryTarget(
       name: "UJETKit",
       url: "https://sdk.ujet.co/ios/2.15.1/UJETKit.xcframework.zip",
-      checksum: "0fe1399ccc9d6caf6d7f428affb3e928b6b8431818b3be4c9d963a5ac0cdeb1a"
+      checksum: "33cc81dff362d0efb69636a654ab647a42b5d4f489fd56a98249411b3f84778f"
     ),
 
     .binaryTarget(
       name: "UJETCobrowseKit",
       url: "https://sdk.ujet.co/ios/2.15.1/UJETCobrowseKit.xcframework.zip",
-      checksum: "e75bfbb146cff937a4d7ffd2650ad72b052d8e99f3e2fcf330d843594aad5c45"
+      checksum: "127e6e3308f79bd8e0f9605206b749eb79fa13b1aa000160b5490279b9e2036e"
     ),
 
     .binaryTarget(
       name: "UJETChatRedKit",
       url: "https://sdk.ujet.co/ios/2.15.1/UJETChatRedKit.xcframework.zip",
-      checksum: "ed715c01895c29a10ddf3ace16911a11606facbf0373c60f27204973386f49d7"
+      checksum: "47e41e110a116415a51d8ee17fd1c85ddebbbed0627d365e283d7f2c77ad99ce"
     ),
     .binaryTarget(
       name: "UJETCallRedKit",
       url: "https://sdk.ujet.co/ios/2.15.1/UJETCallRedKit.xcframework.zip",
-      checksum: "6c8962bfa4fbd796d1dbe92913a10a7ca5d8c80017551bcabc9225d0799e5e0f"
+      checksum: "77d38bcb50062736a10138d6f8fa890a2d42b485ea817ecc81066cc4e2bdf177"
     ),
 
     .target(
