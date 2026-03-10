@@ -19,7 +19,7 @@ let package = Package(
       targets: ["WrapperUJETCobrowseExtension"]),
   ],
   dependencies: [
-    .package(url: "https://github.com/twilio/conversations-ios", .upToNextMinor(from: "4.0.2")),
+    .package(url: "https://github.com/twilio/conversations-ios", .exact(from: "4.0.2")),
     .package(url: "https://github.com/twilio/twilio-voice-ios", .exact("6.10.4")),
     .package(url: "https://github.com/cobrowseio/cobrowse-sdk-ios-binary", .exact("2.29.6")),
   ],
