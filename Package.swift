@@ -26,31 +26,31 @@ let package = Package(
   targets: [
     .binaryTarget(
       name: "UJETFoundationKit",
-      url: "https://sdk.ujet.co/ios/2.15.4/UJETFoundationKit.xcframework.zip",
-      checksum: "62d6aecf7fcfee25d280a8980790c9dbc0fa38a374c2a1ccb44a2651fb0165c6"
+      url: "https://sdk.ujet.co/ios/2.16.0/UJETFoundationKit.xcframework.zip",
+      checksum: "4476b1333bfa239c791fc59b8e56bb4fbfc8e60f882f7bcf934251bd618b9383"
     ),
 
     .binaryTarget(
       name: "UJETKit",
-      url: "https://sdk.ujet.co/ios/2.15.4/UJETKit.xcframework.zip",
-      checksum: "74652ec5c95c77920ed243a450dbd8cad74f9b683f85fe4e529d8b97b6372a34"
+      url: "https://sdk.ujet.co/ios/2.16.0/UJETKit.xcframework.zip",
+      checksum: "66ee3a379efa5754d33a0e059e34e21b1c1a945b78a1b44abb30e3bd82a917f8"
     ),
 
     .binaryTarget(
       name: "UJETCobrowseKit",
-      url: "https://sdk.ujet.co/ios/2.15.4/UJETCobrowseKit.xcframework.zip",
-      checksum: "8f5a2a2fc92238fd57227243613ac2fef4c00c338d1d2f1b693da54146a1e4ff"
+      url: "https://sdk.ujet.co/ios/2.16.0/UJETCobrowseKit.xcframework.zip",
+      checksum: "9b25743453be5bfef93b2a32b72c90641c7eeefd36f744e284c7d38b62b1b72c"
     ),
 
     .binaryTarget(
       name: "UJETChatRedKit",
-      url: "https://sdk.ujet.co/ios/2.15.4/UJETChatRedKit.xcframework.zip",
-      checksum: "e457fa327b4df42e83462640dd9dfa92cdc7cc1bb0393b9bd67e0dd1163cc6a0"
+      url: "https://sdk.ujet.co/ios/2.16.0/UJETChatRedKit.xcframework.zip",
+      checksum: "17e2d267ad1afaa17af8f115c6c44c227b0218e9aecefa7cdc2b883010bc4300"
     ),
     .binaryTarget(
       name: "UJETCallRedKit",
-      url: "https://sdk.ujet.co/ios/2.15.4/UJETCallRedKit.xcframework.zip",
-      checksum: "1ce04c66948f59e899444f58d7ce98cd341ba913852fce2b88a4fd18b4d14a1a"
+      url: "https://sdk.ujet.co/ios/2.16.0/UJETCallRedKit.xcframework.zip",
+      checksum: "62974817555cf877a6c3a6a212e4f98df008ed6cadd538641093ed19cd22103a"
     ),
 
     .target(
